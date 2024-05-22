@@ -30,3 +30,9 @@ jobs:
           login-server: acrlgmorand.azurecr.io
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
+
+      - uses: azure/docker-login@v2
+        with:
+          login-server: acrlgmorand.azurecr.io
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
